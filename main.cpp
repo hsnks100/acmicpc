@@ -5,9 +5,7 @@ using namespace std;
 int main(){ 
     int t; 
     //소스 변경22
-    // 변경1
-    // 변경2
-    // 변경3
+    // 다 지운것 테스트
     //
 
     return 0;
