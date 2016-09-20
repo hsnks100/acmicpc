@@ -1,0 +1,65 @@
+
+SpecialKey     xxx term=bold ctermfg=4 guifg=Blue
+NonText        xxx term=bold ctermfg=12 gui=bold guifg=Blue
+Directory      xxx term=bold ctermfg=4 guifg=Blue
+ErrorMsg       xxx term=standout ctermfg=15 ctermbg=1 guifg=White guibg=Red
+IncSearch      xxx term=reverse cterm=reverse gui=reverse
+Search         xxx term=reverse ctermbg=11 guibg=Yellow
+MoreMsg        xxx term=bold ctermfg=2 gui=bold guifg=SeaGreen
+ModeMsg        xxx term=bold cterm=bold gui=bold
+LineNr         xxx term=underline ctermfg=130 guifg=Brown
+CursorLineNr   xxx term=bold ctermfg=130 gui=bold guifg=Brown
+Question       xxx term=standout ctermfg=2 gui=bold guifg=SeaGreen
+StatusLine     xxx term=bold,reverse cterm=bold,reverse gui=bold,reverse
+StatusLineNC   xxx term=reverse cterm=reverse gui=reverse
+VertSplit      xxx term=reverse cterm=reverse gui=reverse
+Title          xxx term=bold ctermfg=5 gui=bold guifg=Magenta
+Visual         xxx term=reverse ctermbg=7 guibg=LightGrey
+VisualNOS      xxx term=bold,underline cterm=bold,underline gui=bold,underline
+WarningMsg     xxx term=standout ctermfg=1 guifg=Red
+WildMenu       xxx term=standout ctermfg=0 ctermbg=11 guifg=Black guibg=Yellow
+Folded         xxx term=standout ctermfg=4 ctermbg=248 guifg=DarkBlue guibg=LightGrey
+FoldColumn     xxx term=standout ctermfg=4 ctermbg=248 guifg=DarkBlue guibg=Grey
+DiffAdd        xxx term=bold ctermbg=81 guibg=LightBlue
+DiffChange     xxx term=bold ctermbg=225 guibg=LightMagenta
+DiffDelete     xxx term=bold ctermfg=12 ctermbg=159 gui=bold guifg=Blue
+                   guibg=LightCyan
+DiffText       xxx term=reverse cterm=bold ctermbg=9 gui=bold guibg=Red
+SignColumn     xxx term=standout ctermfg=4 ctermbg=248 guifg=DarkBlue guibg=Grey
+Conceal        xxx ctermfg=7 ctermbg=242 guifg=LightGrey guibg=DarkGrey
+SpellBad       xxx term=reverse ctermbg=224 gui=undercurl guisp=Red
+SpellCap       xxx term=reverse ctermbg=81 gui=undercurl guisp=Blue
+SpellRare      xxx term=reverse ctermbg=225 gui=undercurl guisp=Magenta
+SpellLocal     xxx term=underline ctermbg=14 gui=undercurl guisp=DarkCyan
+Pmenu          xxx ctermfg=0 ctermbg=225 guibg=LightMagenta
+PmenuSel       xxx ctermfg=0 ctermbg=7 guibg=Grey
+PmenuSbar      xxx ctermbg=248 guibg=Grey
+PmenuThumb     xxx ctermbg=0 guibg=Black
+TabLine        xxx term=underline cterm=underline ctermfg=0 ctermbg=7 gui=underline
+                   guibg=LightGrey
+TabLineSel     xxx term=bold cterm=bold gui=bold
+TabLineFill    xxx term=reverse cterm=reverse gui=reverse
+
+
+"vim2.output" 
+"vim2.output" 0L, 0C
+
+"input.txt" 9 줄 --11%--
+
+"main.cpp" [바뀜] 113 줄 --17%--
+
+:!read hi
+[마지막으로 고친 뒤 저장 안 함]
+
+
+"input.txt" 9 줄 --11%--
+
+"vim2.output" --버퍼에 줄 없음--
+
+shell returned 127
+
+2 fewer lines; before #1  2 seconds ago
+
+E484: :hi 파일을 열 수 없습니다
+
+E484: hi 파일을 열 수 없습니다

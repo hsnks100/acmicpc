@@ -1,0 +1,991 @@
+
+
+SpecialKey     xxx term=bold ctermfg=4 guifg=Blue
+NonText        xxx term=bold ctermfg=12 gui=bold guifg=Blue
+Directory      xxx term=bold ctermfg=4 guifg=Blue
+ErrorMsg       xxx term=standout ctermfg=15 ctermbg=1 guifg=White guibg=Red
+IncSearch      xxx term=reverse cterm=reverse gui=reverse
+Search         xxx term=reverse ctermbg=11 guibg=Yellow
+MoreMsg        xxx term=bold ctermfg=2 gui=bold guifg=SeaGreen
+ModeMsg        xxx term=bold cterm=bold gui=bold
+LineNr         xxx term=underline ctermfg=130 guifg=Brown
+CursorLineNr   xxx term=bold ctermfg=130 gui=bold guifg=Brown
+Question       xxx term=standout ctermfg=2 gui=bold guifg=SeaGreen
+StatusLine     xxx term=bold,reverse cterm=bold,reverse gui=bold,reverse
+StatusLineNC   xxx term=reverse cterm=reverse gui=reverse
+VertSplit      xxx term=reverse cterm=reverse gui=reverse
+Title          xxx term=bold ctermfg=5 gui=bold guifg=Magenta
+Visual         xxx term=reverse ctermbg=7 guibg=LightGrey
+VisualNOS      xxx term=bold,underline cterm=bold,underline gui=bold,underline
+WarningMsg     xxx term=standout ctermfg=1 guifg=Red
+WildMenu       xxx term=standout ctermfg=0 ctermbg=11 guifg=Black guibg=Yellow
+Folded         xxx term=standout ctermfg=4 ctermbg=248 guifg=DarkBlue guibg=LightGrey
+FoldColumn     xxx term=standout ctermfg=4 ctermbg=248 guifg=DarkBlue guibg=Grey
+DiffAdd        xxx term=bold ctermbg=81 guibg=LightBlue
+DiffChange     xxx term=bold ctermbg=225 guibg=LightMagenta
+DiffDelete     xxx term=bold ctermfg=12 ctermbg=159 gui=bold guifg=Blue
+                   guibg=LightCyan
+DiffText       xxx term=reverse cterm=bold ctermbg=9 gui=bold guibg=Red
+SignColumn     xxx term=standout ctermfg=4 ctermbg=248 guifg=DarkBlue guibg=Grey
+Conceal        xxx ctermfg=7 ctermbg=242 guifg=LightGrey guibg=DarkGrey
+SpellBad       xxx term=reverse ctermbg=224 gui=undercurl guisp=Red
+SpellCap       xxx term=reverse ctermbg=81 gui=undercurl guisp=Blue
+SpellRare      xxx term=reverse ctermbg=225 gui=undercurl guisp=Magenta
+SpellLocal     xxx term=underline ctermbg=14 gui=undercurl guisp=DarkCyan
+Pmenu          xxx ctermfg=0 ctermbg=225 guibg=LightMagenta
+PmenuSel       xxx ctermfg=0 ctermbg=7 guibg=Grey
+PmenuSbar      xxx ctermbg=248 guibg=Grey
+PmenuThumb     xxx ctermbg=0 guibg=Black
+TabLine        xxx term=underline cterm=underline ctermfg=0 ctermbg=7 gui=underline
+                   guibg=LightGrey
+TabLineSel     xxx term=bold cterm=bold gui=bold
+TabLineFill    xxx term=reverse cterm=reverse gui=reverse
+CursorColumn   xxx term=reverse ctermbg=7 guibg=Grey90
+CursorLine     xxx term=underline cterm=underline guibg=Grey90
+ColorColumn    xxx term=reverse ctermbg=224 guibg=LightRed
+Cursor         xxx guifg=bg guibg=fg
+lCursor        xxx guifg=bg guibg=fg
+MatchParen     xxx term=reverse ctermbg=14 guibg=Cyan
+Normal         xxx cleared
+Comment        xxx term=bold ctermfg=4 guifg=Blue
+Constant       xxx term=underline ctermfg=1 guifg=Magenta
+Special        xxx term=bold ctermfg=5 guifg=SlateBlue
+Identifier     xxx term=underline ctermfg=6 guifg=DarkCyan
+Statement      xxx term=bold ctermfg=130 gui=bold guifg=Brown
+PreProc        xxx term=underline ctermfg=5 guifg=Purple
+Type           xxx term=underline ctermfg=2 gui=bold guifg=SeaGreen
+Underlined     xxx term=underline cterm=underline ctermfg=5 gui=underline
+                   guifg=SlateBlue
+Ignore         xxx ctermfg=15 guifg=bg
+Error          xxx term=reverse ctermfg=15 ctermbg=9 guifg=White guibg=Red
+Todo           xxx term=standout ctermfg=0 ctermbg=11 guifg=Blue guibg=Yellow
+String         xxx links to Constant
+Character      xxx links to Constant
+Number         xxx links to Constant
+Boolean        xxx links to Constant
+Float          xxx links to Number
+Function       xxx links to Identifier
+Conditional    xxx links to Statement
+Repeat         xxx links to Statement
+Label          xxx links to Statement
+Operator       xxx links to Statement
+Keyword        xxx links to Statement
+Exception      xxx links to Statement
+Include        xxx links to PreProc
+Define         xxx links to PreProc
+Macro          xxx links to PreProc
+PreCondit      xxx links to PreProc
+StorageClass   xxx links to Type
+Structure      xxx links to Type
+Typedef        xxx links to Type
+Tag            xxx links to Special
+SpecialChar    xxx links to Special
+Delimiter      xxx links to Special
+SpecialComment xxx links to Special
+Debug          xxx links to Special
+bufstopKey     xxx links to String
+bufstopName    xxx links to Type
+SyntasticError xxx links to SpellBad
+SyntasticWarning xxx links to SpellCap
+SyntasticStyleError xxx links to SyntasticError
+SyntasticStyleWarning xxx links to SyntasticWarning
+airline_x      xxx ctermfg=85 ctermbg=234 guifg=#9cffd3 guibg=#202020
+airline_x_bold xxx term=bold cterm=bold ctermfg=85 ctermbg=234 gui=bold guifg=#9cffd3
+                   guibg=#202020
+airline_x_red  xxx ctermfg=160 ctermbg=234 guifg=#ff0000 guibg=#202020
+airline_y      xxx ctermfg=255 ctermbg=238 guifg=#ffffff guibg=#444444
+airline_y_bold xxx term=bold cterm=bold ctermfg=255 ctermbg=238 gui=bold guifg=#ffffff
+                   guibg=#444444
+airline_y_red  xxx ctermfg=160 ctermbg=238 guifg=#ff0000 guibg=#444444
+airline_z      xxx ctermfg=17 ctermbg=190 guifg=#00005f guibg=#dfff00
+airline_z_bold xxx term=bold cterm=bold ctermfg=17 ctermbg=190 gui=bold guifg=#00005f
+                   guibg=#dfff00
+airline_z_red  xxx ctermfg=160 ctermbg=190 guifg=#ff0000 guibg=#dfff00
+airline_error  xxx ctermfg=232 ctermbg=160 guifg=#000000 guibg=#990000
+airline_error_bold xxx term=bold cterm=bold ctermfg=232 ctermbg=160 gui=bold
+                   guifg=#000000 guibg=#990000
+airline_error_red xxx ctermfg=160 ctermbg=160 guifg=#ff0000 guibg=#990000
+airline_a      xxx ctermfg=17 ctermbg=190 guifg=#00005f guibg=#dfff00
+airline_a_bold xxx term=bold cterm=bold ctermfg=17 ctermbg=190 gui=bold guifg=#00005f
+                   guibg=#dfff00
+airline_a_red  xxx ctermfg=160 ctermbg=190 guifg=#ff0000 guibg=#dfff00
+airline_b      xxx ctermfg=255 ctermbg=238 guifg=#ffffff guibg=#444444
+airline_b_bold xxx term=bold cterm=bold ctermfg=255 ctermbg=238 gui=bold guifg=#ffffff
+                   guibg=#444444
+airline_b_red  xxx ctermfg=160 ctermbg=238 guifg=#ff0000 guibg=#444444
+airline_c      xxx ctermfg=85 ctermbg=234 guifg=#9cffd3 guibg=#202020
+airline_c_bold xxx term=bold cterm=bold ctermfg=85 ctermbg=234 gui=bold guifg=#9cffd3
+                   guibg=#202020
+airline_c_red  xxx ctermfg=160 ctermbg=234 guifg=#ff0000 guibg=#202020
+airline_warning xxx ctermfg=232 ctermbg=166 guifg=#000000 guibg=#df5f00
+airline_warning_bold xxx term=bold cterm=bold ctermfg=232 ctermbg=166 gui=bold
+                   guifg=#000000 guibg=#df5f00
+airline_warning_red xxx ctermfg=160 ctermbg=166 guifg=#ff0000 guibg=#df5f00
+CtrlPwhite     xxx term=bold cterm=bold ctermfg=55 ctermbg=231 gui=bold guifg=#5f00af
+                   guibg=#ffffff
+CtrlPlight     xxx ctermfg=231 ctermbg=98 guifg=#ffffff guibg=#875fd7
+CtrlPdark      xxx ctermfg=189 ctermbg=55 guifg=#d7d7ff guibg=#5f00af
+CtrlParrow1    xxx ctermfg=98 ctermbg=231 guifg=#875fd7 guibg=#ffffff
+CtrlParrow2    xxx ctermfg=231 ctermbg=98 guifg=#ffffff guibg=#875fd7
+CtrlParrow3    xxx ctermfg=98 ctermbg=55 guifg=#875fd7 guibg=#5f00af
+airline_tab    xxx ctermfg=255 ctermbg=238 guifg=#ffffff guibg=#444444
+airline_tabsel xxx ctermfg=17 ctermbg=190 guifg=#00005f guibg=#dfff00
+airline_tabtype xxx ctermfg=232 ctermbg=214 guifg=#000000 guibg=#ffaf00
+airline_tabfill xxx ctermfg=85 ctermbg=234 guifg=#9cffd3 guibg=#202020
+airline_tabmod xxx ctermfg=17 ctermbg=45 guifg=#00005f guibg=#00dfff
+airline_tabmod_unsel xxx ctermfg=255 ctermbg=53 guifg=#ffffff guibg=#5f005f
+airline_tabhid xxx ctermfg=85 ctermbg=234 guifg=#9cffd3 guibg=#202020
+airline_tab_right xxx ctermfg=239 ctermbg=236 guifg=#4e4e4e guibg=#303030
+airline_tabsel_right xxx ctermfg=17 ctermbg=190 guifg=#00005f guibg=#dfff00
+airline_tabmod_right xxx ctermfg=17 ctermbg=45 guifg=#00005f guibg=#00dfff
+airline_tabhid_right xxx ctermfg=85 ctermbg=234 guifg=#9cffd3 guibg=#202020
+airline_tabmod_unsel_right xxx ctermfg=255 ctermbg=53 guifg=#ffffff guibg=#5f005f
+airline_a_to_airline_b xxx ctermfg=190 ctermbg=238
+airline_b_to_airline_c xxx ctermfg=238 ctermbg=234
+airline_c_to_airline_x xxx ctermfg=234 ctermbg=234
+airline_x_to_airline_y xxx ctermfg=238 ctermbg=234
+airline_y_to_airline_z xxx ctermfg=190 ctermbg=238
+airline_tabsel_to_airline_tabfill xxx ctermfg=190 ctermbg=234
+airline_tabfill_to_airline_tabfill xxx ctermfg=234 ctermbg=234
+airline_tabfill_to_airline_tabtype xxx ctermfg=214 ctermbg=234
+airline_c1_inactive xxx ctermfg=97 ctermbg=236 guifg=#875faf guibg=#303030
+cStatement     xxx links to Statement
+cLabel         xxx links to Label
+cConditional   xxx links to Conditional
+cRepeat        xxx links to Repeat
+cTodo          xxx links to Todo
+cBadContinuation xxx links to Error
+cSpecial       xxx links to SpecialChar
+cFormat        xxx links to cSpecial
+cString        xxx links to String
+cCppString     xxx links to cString
+cSpaceError    xxx links to cError
+cCppSkip       xxx cleared
+cCharacter     xxx links to Character
+cSpecialError  xxx links to cError
+cSpecialCharacter xxx links to cSpecial
+cBadBlock      xxx cleared
+cCurlyError    xxx links to cError
+cErrInParen    xxx links to cError
+cCppParen      xxx cleared
+cErrInBracket  xxx links to cError
+cCppBracket    xxx cleared
+cBlock         xxx cleared
+cParenError    xxx links to cError
+cIncluded      xxx links to cString
+cCommentSkip   xxx links to cComment
+cCommentString xxx links to cString
+cComment2String xxx links to cString
+cCommentStartError xxx links to cError
+cUserLabel     xxx links to Label
+cBitField      xxx cleared
+cOctalZero     xxx links to PreProc
+cNumber        xxx links to Number
+cFloat         xxx links to Float
+cOctal         xxx links to Number
+cOctalError    xxx links to cError
+cNumbersCom    xxx cleared
+cParen         xxx cleared
+cBracket       xxx cleared
+cNumbers       xxx cleared
+cCommentL      xxx links to cComment
+cCommentStart  xxx links to cComment
+cComment       xxx links to Comment
+cCommentError  xxx links to cError
+cOperator      xxx links to Operator
+cType          xxx links to Type
+cStructure     xxx links to Structure
+cStorageClass  xxx links to StorageClass
+cConstant      xxx links to Constant
+cPreCondit     xxx links to PreCondit
+cPreConditMatch xxx links to cPreCondit
+cCppInIf       xxx cleared
+cCppInElse     xxx cleared
+cCppInElse2    xxx links to cCppOutIf2
+cCppOutIf      xxx cleared
+cCppOutIf2     xxx links to cCppOut
+cCppOutElse    xxx cleared
+cCppInSkip     xxx cleared
+cCppOutSkip    xxx links to cCppOutIf2
+cCppOutWrapper xxx links to cPreCondit
+cCppInWrapper  xxx links to cCppOutWrapper
+cPreProc       xxx links to PreProc
+cInclude       xxx links to Include
+cDefine        xxx links to Macro
+cMulti         xxx cleared
+cUserCont      xxx cleared
+cError         xxx links to Error
+cCppOut        xxx links to Comment
+cppStatement   xxx links to Statement
+cppAccess      xxx links to cppStatement
+cppModifier    xxx links to Type
+cppType        xxx links to Type
+cppExceptions  xxx links to Exception
+cppOperator    xxx links to Operator
+cppCast        xxx links to cppStatement
+cppStorageClass xxx links to StorageClass
+cppStructure   xxx links to Structure
+cppBoolean     xxx links to Boolean
+cppConstant    xxx links to Constant
+cppRawStringDelimiter xxx links to Delimiter
+cppRawString   xxx links to String
+cppNumber      xxx cleared
+cppMinMax      xxx cleared
+SyntasticErrorSign xxx links to Error
+SyntasticWarningSign xxx links to Todo
+SyntasticStyleErrorSign xxx links to SyntasticErrorSign
+SyntasticStyleWarningSign xxx links to SyntasticWarningSign
+SyntasticStyleErrorLine xxx links to SyntasticErrorLine
+SyntasticErrorLine xxx cleared
+SyntasticStyleWarningLine xxx links to SyntasticWarningLine
+SyntasticWarningLine xxx cleared
+airline_c1_to_airline_x xxx ctermfg=234
+airline_tab_to_airline_tabsel xxx ctermfg=238 ctermbg=190
+airline_c2_inactive xxx ctermfg=239 ctermbg=236 guifg=#4e4e4e guibg=#303030
+airline_x_to_airline_y_bold xxx term=bold cterm=bold ctermfg=238 ctermbg=234 gui=bold
+airline_x_to_airline_y_red xxx ctermfg=160 ctermbg=234 guifg=#ff0000
+airline_tabsel_to_airline_tabfill_bold xxx term=bold cterm=bold ctermfg=190
+                   ctermbg=234 gui=bold
+airline_tabsel_to_airline_tabfill_red xxx ctermfg=160 ctermbg=234 guifg=#ff0000
+airline_tabfill_to_airline_tabtype_bold xxx term=bold cterm=bold ctermfg=214
+                   ctermbg=234 gui=bold
+airline_tabfill_to_airline_tabtype_red xxx ctermfg=160 ctermbg=234 guifg=#ff0000
+airline_a_to_airline_b_bold xxx term=bold cterm=bold ctermfg=190 ctermbg=238 gui=bold
+airline_a_to_airline_b_red xxx ctermfg=160 ctermbg=238 guifg=#ff0000
+airline_tabfill_to_airline_tabfill_bold xxx term=bold cterm=bold ctermfg=234
+                   ctermbg=234 gui=bold
+airline_tabfill_to_airline_tabfill_red xxx ctermfg=160 ctermbg=234 guifg=#ff0000
+airline_b_to_airline_c_bold xxx term=bold cterm=bold ctermfg=238 ctermbg=234 gui=bold
+airline_b_to_airline_c_red xxx ctermfg=160 ctermbg=234 guifg=#ff0000
+airline_c_to_airline_x_bold xxx term=bold cterm=bold ctermfg=234 ctermbg=234 gui=bold
+airline_c_to_airline_x_red xxx ctermfg=160 ctermbg=234 guifg=#ff0000
+airline_y_to_airline_z_bold xxx term=bold cterm=bold ctermfg=190 ctermbg=238 gui=bold
+airline_y_to_airline_z_red xxx ctermfg=160 ctermbg=238 guifg=#ff0000
+airline_x_inactive xxx ctermfg=239 ctermbg=236 guifg=#4e4e4e guibg=#303030
+airline_x_inactive_bold xxx term=bold cterm=bold ctermfg=239 ctermbg=236 gui=bold
+                   guifg=#4e4e4e guibg=#303030
+airline_x_inactive_red xxx ctermfg=160 ctermbg=236 guifg=#ff0000 guibg=#303030
+airline_y_inactive xxx ctermfg=239 ctermbg=235 guifg=#4e4e4e guibg=#262626
+airline_y_inactive_bold xxx term=bold cterm=bold ctermfg=239 ctermbg=235 gui=bold
+                   guifg=#4e4e4e guibg=#262626
+airline_y_inactive_red xxx ctermfg=160 ctermbg=235 guifg=#ff0000 guibg=#262626
+airline_z_inactive xxx ctermfg=239 ctermbg=234 guifg=#4e4e4e guibg=#1c1c1c
+airline_z_inactive_bold xxx term=bold cterm=bold ctermfg=239 ctermbg=234 gui=bold
+                   guifg=#4e4e4e guibg=#1c1c1c
+airline_z_inactive_red xxx ctermfg=160 ctermbg=234 guifg=#ff0000 guibg=#1c1c1c
+airline_error_inactive xxx ctermfg=232 ctermbg=160 guifg=#000000 guibg=#990000
+airline_error_inactive_bold xxx term=bold cterm=bold ctermfg=232 ctermbg=160 gui=bold
+                   guifg=#000000 guibg=#990000
+airline_error_inactive_red xxx ctermfg=160 ctermbg=160 guifg=#ff0000 guibg=#990000
+airline_a_inactive xxx ctermfg=239 ctermbg=234 guifg=#4e4e4e guibg=#1c1c1c
+airline_a_inactive_bold xxx term=bold cterm=bold ctermfg=239 ctermbg=234 gui=bold
+                   guifg=#4e4e4e guibg=#1c1c1c
+airline_a_inactive_red xxx ctermfg=160 ctermbg=234 guifg=#ff0000 guibg=#1c1c1c
+airline_b_inactive xxx ctermfg=239 ctermbg=235 guifg=#4e4e4e guibg=#262626
+airline_b_inactive_bold xxx term=bold cterm=bold ctermfg=239 ctermbg=235 gui=bold
+                   guifg=#4e4e4e guibg=#262626
+airline_b_inactive_red xxx ctermfg=160 ctermbg=235 guifg=#ff0000 guibg=#262626
+airline_c_inactive xxx ctermfg=239 ctermbg=236 guifg=#4e4e4e guibg=#303030
+airline_c_inactive_bold xxx term=bold cterm=bold ctermfg=239 ctermbg=236 gui=bold
+                   guifg=#4e4e4e guibg=#303030
+airline_c_inactive_red xxx ctermfg=160 ctermbg=236 guifg=#ff0000 guibg=#303030
+airline_warning_inactive xxx ctermfg=232 ctermbg=166 guifg=#000000 guibg=#df5f00
+airline_warning_inactive_bold xxx term=bold cterm=bold ctermfg=232 ctermbg=166
+                   gui=bold guifg=#000000 guibg=#df5f00
+airline_warning_inactive_red xxx ctermfg=160 ctermbg=166 guifg=#ff0000 guibg=#df5f00
+airline_tab_to_airline_tabsel_inactive xxx cleared
+airline_x_to_airline_y_inactive xxx ctermfg=235 ctermbg=236
+airline_c1_to_airline_x_inactive xxx ctermfg=236 ctermbg=236
+airline_tabfill_to_airline_tabtype_inactive xxx cleared
+airline_tabfill_to_airline_tabfill_inactive xxx cleared
+airline_c_to_airline_x_inactive xxx ctermfg=236 ctermbg=236
+airline_tabsel_to_airline_tabfill_inactive xxx cleared
+airline_a_to_airline_b_inactive xxx ctermfg=234 ctermbg=235
+airline_y_to_airline_z_inactive xxx ctermfg=234 ctermbg=235
+airline_b_to_airline_c_inactive xxx ctermfg=235 ctermbg=236
+airline_c1_to_airline_x_bold xxx term=bold cterm=bold ctermfg=234 gui=bold
+airline_c1_to_airline_x_red xxx ctermfg=160 guifg=#ff0000
+airline_tab_to_airline_tabsel_bold xxx term=bold cterm=bold ctermfg=238 ctermbg=190
+                   gui=bold
+airline_tab_to_airline_tabsel_red xxx ctermfg=160 ctermbg=190 guifg=#ff0000
+airline_c2_to_airline_x xxx ctermfg=234
+airline_tabsel_to_airline_tab xxx ctermfg=190 ctermbg=238
+airline_tab_to_airline_tabfill xxx ctermfg=238 ctermbg=234
+airline_tabsel_to_airline_tabfill_inactive_inactive xxx cleared
+airline_tabsel_to_airline_tabfill_inactive_inactive_bold xxx term=bold cterm=bold
+                   gui=bold
+airline_tabsel_to_airline_tabfill_inactive_inactive_red xxx ctermfg=160 guifg=#ff0000
+airline_c1_to_airline_x_inactive_inactive xxx ctermfg=236 ctermbg=236
+airline_c1_to_airline_x_inactive_inactive_bold xxx term=bold cterm=bold ctermfg=236
+                   ctermbg=236 gui=bold
+airline_c1_to_airline_x_inactive_inactive_red xxx ctermfg=160 ctermbg=236
+                   guifg=#ff0000
+airline_a_to_airline_b_inactive_inactive xxx ctermfg=234 ctermbg=235
+airline_a_to_airline_b_inactive_inactive_bold xxx term=bold cterm=bold ctermfg=234
+                   ctermbg=235 gui=bold
+airline_a_to_airline_b_inactive_inactive_red xxx ctermfg=160 ctermbg=235 guifg=#ff0000
+airline_c_to_airline_x_inactive_inactive xxx ctermfg=236 ctermbg=236
+airline_c_to_airline_x_inactive_inactive_bold xxx term=bold cterm=bold ctermfg=236
+                   ctermbg=236 gui=bold
+airline_c_to_airline_x_inactive_inactive_red xxx ctermfg=160 ctermbg=236 guifg=#ff0000
+airline_x_to_airline_y_inactive_inactive xxx ctermfg=235 ctermbg=236
+airline_x_to_airline_y_inactive_inactive_bold xxx term=bold cterm=bold ctermfg=235
+                   ctermbg=236 gui=bold
+airline_x_to_airline_y_inactive_inactive_red xxx ctermfg=160 ctermbg=236 guifg=#ff0000
+airline_tabfill_to_airline_tabtype_inactive_inactive xxx cleared
+airline_tabfill_to_airline_tabtype_inactive_inactive_bold xxx term=bold cterm=bold
+                   gui=bold
+airline_tabfill_to_airline_tabtype_inactive_inactive_red xxx ctermfg=160 guifg=#ff0000
+airline_tabfill_to_airline_tabfill_inactive_inactive xxx cleared
+airline_tabfill_to_airline_tabfill_inactive_inactive_bold xxx term=bold cterm=bold
+                   gui=bold
+airline_tabfill_to_airline_tabfill_inactive_inactive_red xxx ctermfg=160 guifg=#ff0000
+airline_tab_to_airline_tabsel_inactive_inactive xxx cleared
+airline_tab_to_airline_tabsel_inactive_inactive_bold xxx term=bold cterm=bold gui=bold
+airline_tab_to_airline_tabsel_inactive_inactive_red xxx ctermfg=160 guifg=#ff0000
+airline_b_to_airline_c_inactive_inactive xxx ctermfg=235 ctermbg=236
+airline_b_to_airline_c_inactive_inactive_bold xxx term=bold cterm=bold ctermfg=235
+                   ctermbg=236 gui=bold
+airline_b_to_airline_c_inactive_inactive_red xxx ctermfg=160 ctermbg=236 guifg=#ff0000
+airline_y_to_airline_z_inactive_inactive xxx ctermfg=234 ctermbg=235
+airline_y_to_airline_z_inactive_inactive_bold xxx term=bold cterm=bold ctermfg=234
+                   ctermbg=235 gui=bold
+airline_y_to_airline_z_inactive_inactive_red xxx ctermfg=160 ctermbg=235 guifg=#ff0000
+airline_c2_to_airline_x_inactive xxx ctermfg=236 ctermbg=236
+airline_tabmod_to_airline_tab xxx ctermfg=45 ctermbg=238
+airline_c2_to_airline_x_bold xxx term=bold cterm=bold ctermfg=234 gui=bold
+airline_c2_to_airline_x_red xxx ctermfg=160 guifg=#ff0000
+airline_tab_to_airline_tabfill_bold xxx term=bold cterm=bold ctermfg=238 ctermbg=234
+                   gui=bold
+airline_tab_to_airline_tabfill_red xxx ctermfg=160 ctermbg=234 guifg=#ff0000
+airline_tabsel_to_airline_tab_bold xxx term=bold cterm=bold ctermfg=190 ctermbg=238
+                   gui=bold
+airline_tabsel_to_airline_tab_red xxx ctermfg=160 ctermbg=238 guifg=#ff0000
+>              xxx cleared
+redir          xxx cleared
+airline_tabmod_unsel_to_airline_tab xxx ctermfg=53 ctermbg=238
+airline_c3_inactive xxx ctermfg=239 ctermbg=236 guifg=#4e4e4e guibg=#303030
+airline_tabmod_to_airline_tab_bold xxx term=bold cterm=bold ctermfg=45 ctermbg=238
+                   gui=bold
+airline_tabmod_to_airline_tab_red xxx ctermfg=160 ctermbg=238 guifg=#ff0000
+airline_tabmod_unsel_to_airline_tabsel xxx ctermfg=53 ctermbg=190
+airline_tabsel_to_airline_tabhid xxx ctermfg=190 ctermbg=234
+airline_tab_to_airline_tabhid xxx ctermfg=238 ctermbg=234
+airline_tabmod_unsel_to_airline_tab_bold xxx term=bold cterm=bold ctermfg=53
+                   ctermbg=238 gui=bold
+airline_tabmod_unsel_to_airline_tab_red xxx ctermfg=160 ctermbg=238 guifg=#ff0000
+airline_tabsel_to_airline_tabhid_bold xxx term=bold cterm=bold ctermfg=190 ctermbg=234
+                   gui=bold
+airline_tabsel_to_airline_tabhid_red xxx ctermfg=160 ctermbg=234 guifg=#ff0000
+airline_tab_to_airline_tabhid_bold xxx term=bold cterm=bold ctermfg=238 ctermbg=234
+                   gui=bold
+airline_tab_to_airline_tabhid_red xxx ctermfg=160 ctermbg=234 guifg=#ff0000
+airline_tabmod_unsel_to_airline_tabsel_bold xxx term=bold cterm=bold ctermfg=53
+                   ctermbg=190 gui=bold
+airline_tabmod_unsel_to_airline_tabsel_red xxx ctermfg=160 ctermbg=190 guifg=#ff0000
+airline_tab_to_airline_tabmod xxx ctermfg=238 ctermbg=45
+airline_tabmod_to_airline_tabfill xxx ctermfg=45 ctermbg=234
+airline_tab_to_airline_tabmod_bold xxx term=bold cterm=bold ctermfg=238 ctermbg=45
+                   gui=bold
+airline_tab_to_airline_tabmod_red xxx ctermfg=160 ctermbg=45 guifg=#ff0000
+airline_tabmod_to_airline_tabfill_bold xxx term=bold cterm=bold ctermfg=45 ctermbg=234
+                   gui=bold
+airline_tabmod_to_airline_tabfill_red xxx ctermfg=160 ctermbg=234 guifg=#ff0000
+airline_tabhid_to_airline_tabsel xxx ctermfg=234 ctermbg=190
+CtrlPPrtBase   xxx links to Comment
+CtrlPPrtText   xxx links to Normal
+CtrlPPrtCursor xxx links to Constant
+CtrlPMatch     xxx links to Identifier
+CtrlPStats     xxx links to Function
+CtrlPMode2     xxx links to LineNr
+CtrlPMode1     xxx links to Character
+CtrlPNoEntries xxx links to Error
+CtrlPlight_to_CtrlPwhite xxx ctermfg=98 ctermbg=231
+CtrlPwhite_to_CtrlPlight xxx ctermfg=231 ctermbg=98
+CtrlPlight_to_CtrlPdark xxx ctermfg=98 ctermbg=55
+CtrlPdark_to_CtrlPdark xxx ctermfg=55 ctermbg=55
+CtrlPdark_to_CtrlPlight xxx ctermfg=98 ctermbg=55
+airline_tabhid_to_airline_tab xxx ctermfg=234 ctermbg=238
+airline_c6_to_airline_x xxx ctermfg=234
+airline_c6_inactive xxx ctermfg=239 ctermbg=236 guifg=#4e4e4e guibg=#303030
+airline_c2_to_airline_x_inactive_inactive xxx ctermfg=236 ctermbg=236
+airline_c2_to_airline_x_inactive_inactive_bold xxx term=bold cterm=bold ctermfg=236
+                   ctermbg=236 gui=bold
+airline_c2_to_airline_x_inactive_inactive_red xxx ctermfg=160 ctermbg=236
+                   guifg=#ff0000
+airline_tabsel_to_airline_tab_inactive_inactive_bold xxx term=bold cterm=bold gui=bold
+airline_tabsel_to_airline_tab_inactive_inactive_red xxx ctermfg=160 guifg=#ff0000
+airline_tab_to_airline_tabfill_inactive_inactive_bold xxx term=bold cterm=bold
+                   gui=bold
+airline_tab_to_airline_tabfill_inactive_inactive_red xxx ctermfg=160 guifg=#ff0000
+airline_c6_to_airline_x_inactive xxx ctermfg=236 ctermbg=236
+vimTodo        xxx links to Todo
+vimCommand     xxx links to Statement
+vimStdPlugin   xxx cleared
+vimOption      xxx links to PreProc
+vimErrSetting  xxx links to vimError
+vimAutoEvent   xxx links to Type
+vimGroup       xxx links to Type
+vimHLGroup     xxx links to vimGroup
+vimFuncName    xxx links to Function
+vimGlobal      xxx cleared
+vimSubst       xxx links to vimCommand
+vimNumber      xxx links to Number
+vimAddress     xxx links to vimMark
+vimAutoCmd     xxx links to vimCommand
+vimIsCommand   xxx cleared
+vimExtCmd      xxx cleared
+vimFilter      xxx cleared
+vimLet         xxx links to vimCommand
+vimMap         xxx links to vimCommand
+vimMark        xxx links to Number
+vimSet         xxx cleared
+vimSyntax      xxx links to vimCommand
+vimUserCmd     xxx cleared
+vimCmdSep      xxx cleared
+vimVar         xxx links to Identifier
+vimFBVar       xxx links to vimVar
+vimInsert      xxx links to vimString
+vimBehaveModel xxx links to vimBehave
+vimBehaveError xxx links to vimError
+vimBehave      xxx links to vimCommand
+vimFTCmd       xxx links to vimCommand
+vimFTOption    xxx links to vimSynType
+vimFTError     xxx links to vimError
+vimFiletype    xxx cleared
+vimAugroup     xxx cleared
+vimExecute     xxx cleared
+vimNotFunc     xxx links to vimCommand
+vimFunction    xxx cleared
+vimFunctionError xxx links to vimError
+vimLineComment xxx links to vimComment
+vimSpecFile    xxx links to Identifier
+vimOper        xxx links to Operator
+vimOperParen   xxx cleared
+vimComment     xxx links to Comment
+vimString      xxx links to String
+vimRegister    xxx links to SpecialChar
+vimCmplxRepeat xxx links to SpecialChar
+vimRegion      xxx cleared
+vimSynLine     xxx cleared
+vimNotation    xxx links to Special
+vimCtrlChar    xxx links to SpecialChar
+vimFuncVar     xxx links to Identifier
+vimContinue    xxx links to Special
+vimAugroupKey  xxx links to vimCommand
+vimAugroupError xxx links to vimError
+vimEnvvar      xxx links to PreProc
+vimFunc        xxx links to vimError
+vimParenSep    xxx links to Delimiter
+vimSep         xxx links to Delimiter
+vimOperError   xxx links to Error
+vimFuncKey     xxx links to vimCommand
+vimFuncSID     xxx links to Special
+vimAbb         xxx links to vimCommand
+vimEcho        xxx cleared
+vimEchoHL      xxx links to vimCommand
+vimIf          xxx cleared
+vimHighlight   xxx links to vimCommand
+vimNorm        xxx links to vimCommand
+vimUnmap       xxx links to vimMap
+vimUserCommand xxx links to vimCommand
+vimFuncBody    xxx cleared
+vimFuncBlank   xxx cleared
+vimPattern     xxx links to Type
+vimSpecFileMod xxx links to vimSpecFile
+vimEscapeBrace xxx cleared
+vimSetEqual    xxx cleared
+vimSetString   xxx links to vimString
+vimSubstRep    xxx cleared
+vimSubstRange  xxx cleared
+vimUserAttrb   xxx links to vimSpecial
+vimUserAttrbError xxx links to Error
+vimUserAttrbKey xxx links to vimOption
+vimUserAttrbCmplt xxx links to vimSpecial
+vimUserCmdError xxx links to Error
+vimUserAttrbCmpltFunc xxx links to Special
+vimCommentString xxx links to vimString
+vimPatSepErr   xxx links to vimPatSep
+vimPatSep      xxx links to SpecialChar
+vimPatSepZ     xxx links to vimPatSep
+vimPatSepZone  xxx links to vimString
+vimPatSepR     xxx links to vimPatSep
+vimPatRegion   xxx cleared
+vimNotPatSep   xxx links to vimString
+vimStringCont  xxx links to vimString
+vimSubstTwoBS  xxx links to vimString
+vimSubstSubstr xxx links to SpecialChar
+vimCollection  xxx cleared
+vimSubstPat    xxx cleared
+vimSubst1      xxx links to vimSubst
+vimSubstDelim  xxx links to Delimiter
+vimSubstRep4   xxx cleared
+vimSubstFlagErr xxx links to vimError
+vimCollClass   xxx cleared
+vimCollClassErr xxx links to vimError
+vimSubstFlags  xxx links to Special
+vimMarkNumber  xxx links to vimNumber
+vimPlainMark   xxx links to vimMark
+vimPlainRegister xxx links to vimRegister
+vimSetMod      xxx links to vimOption
+vimSetSep      xxx links to Statement
+vimMapMod      xxx links to vimBracket
+vimMapLhs      xxx cleared
+vimAutoCmdSpace xxx cleared
+vimAutoEventList xxx cleared
+vimAutoCmdSfxList xxx cleared
+vimEchoHLNone  xxx links to vimGroup
+vimMapBang     xxx links to vimCommand
+vimMapRhs      xxx cleared
+vimMapModKey   xxx links to vimFuncSID
+vimMapModErr   xxx links to vimError
+vimMapRhsExtend xxx cleared
+vimMenuBang    xxx cleared
+vimMenuPriority xxx cleared
+vimMenuName    xxx links to PreProc
+vimMenuMod     xxx links to vimMapMod
+vimMenuNameMore xxx links to vimMenuName
+vimMenuMap     xxx cleared
+vimMenuRhs     xxx cleared
+vimBracket     xxx links to Delimiter
+vimUserFunc    xxx links to Normal
+vimElseIfErr   xxx links to Error
+vimBufnrWarn   xxx links to vimWarn
+vimNormCmds    xxx cleared
+vimGroupSpecial xxx links to Special
+vimGroupList   xxx cleared
+vimSynError    xxx links to Error
+vimSynContains xxx links to vimSynOption
+vimSynKeyContainedin xxx links to vimSynContains
+vimSynNextgroup xxx links to vimSynOption
+vimSynType     xxx links to vimSpecial
+vimAuSyntax    xxx cleared
+vimSynCase     xxx links to Type
+vimSynCaseError xxx links to vimError
+vimClusterName xxx cleared
+vimGroupName   xxx links to vimGroup
+vimGroupAdd    xxx links to vimSynOption
+vimGroupRem    xxx links to vimSynOption
+vimIskList     xxx cleared
+vimIskSep      xxx links to Delimiter
+vimSynKeyOpt   xxx links to vimSynOption
+vimSynKeyRegion xxx cleared
+vimMtchComment xxx links to vimComment
+vimSynMtchOpt  xxx links to vimSynOption
+vimSynRegPat   xxx links to vimString
+vimSynMatchRegion xxx cleared
+vimSynMtchCchar xxx cleared
+vimSynMtchGroup xxx cleared
+vimSynPatRange xxx links to vimString
+vimSynNotPatRange xxx links to vimSynRegPat
+vimSynRegOpt   xxx links to vimSynOption
+vimSynReg      xxx links to Type
+vimSynMtchGrp  xxx links to vimSynOption
+vimSynRegion   xxx cleared
+vimSynPatMod   xxx cleared
+vimSyncC       xxx links to Type
+vimSyncLines   xxx cleared
+vimSyncMatch   xxx cleared
+vimSyncError   xxx links to Error
+vimSyncLinebreak xxx cleared
+vimSyncLinecont xxx cleared
+vimSyncRegion  xxx cleared
+vimSyncGroupName xxx links to vimGroupName
+vimSyncKey     xxx links to Type
+vimSyncGroup   xxx links to vimGroupName
+vimSyncNone    xxx links to Type
+vimHiLink      xxx cleared
+vimHiClear     xxx links to vimHighlight
+vimHiKeyList   xxx cleared
+vimHiCtermError xxx links to vimError
+vimHiBang      xxx cleared
+vimHiGroup     xxx links to vimGroupName
+vimHiAttrib    xxx links to PreProc
+vimFgBgAttrib  xxx links to vimHiAttrib
+vimHiAttribList xxx links to vimError
+vimHiCtermColor xxx cleared
+vimHiFontname  xxx cleared
+vimHiGuiFontname xxx cleared
+vimHiGuiRgb    xxx links to vimNumber
+vimHiTerm      xxx links to Type
+vimHiCTerm     xxx links to vimHiTerm
+vimHiStartStop xxx links to vimHiTerm
+vimHiCtermFgBg xxx links to vimHiTerm
+vimHiGui       xxx links to vimHiTerm
+vimHiGuiFont   xxx links to vimHiTerm
+vimHiGuiFgBg   xxx links to vimHiTerm
+vimHiKeyError  xxx links to vimError
+vimHiTermcap   xxx cleared
+vimHiNmbr      xxx links to Number
+vimCommentTitle xxx links to PreProc
+vimCommentTitleLeader xxx cleared
+vimSearchDelim xxx links to Statement
+vimSearch      xxx links to vimString
+luaTodo        xxx links to Todo
+luaComment     xxx links to Comment
+luaInnerComment xxx cleared
+luaParenError  xxx links to Error
+luaSpecial     xxx links to SpecialChar
+luaIfThen      xxx cleared
+luaElseifThen  xxx cleared
+luaElse        xxx links to Conditional
+luaThenEnd     xxx cleared
+luaBlock       xxx cleared
+luaLoopBlock   xxx cleared
+luaIn          xxx links to Operator
+luaStatement   xxx links to Statement
+luaParen       xxx cleared
+luaTable       xxx links to Structure
+luaBraceError  xxx links to Error
+luaTableBlock  xxx cleared
+luaError       xxx links to Error
+luaFunction    xxx links to Function
+luaFunctionBlock xxx cleared
+luaCond        xxx links to Conditional
+luaRepeat      xxx links to Repeat
+luaLabel       xxx links to Label
+luaOperator    xxx links to Operator
+luaConstant    xxx links to Constant
+luaString2     xxx links to String
+luaString      xxx links to String
+luaNumber      xxx links to Number
+luaFunc        xxx links to Identifier
+luaFor         xxx links to Repeat
+vimScriptDelim xxx links to Comment
+vimLuaRegion   xxx cleared
+podCmdText     xxx links to String
+podCommand     xxx links to Statement
+podOverIndent  xxx links to Number
+podForKeywd    xxx links to Identifier
+podFormat      xxx links to Identifier
+podVerbatimLine xxx links to PreProc
+podSpecial     xxx links to Identifier
+podEscape      xxx links to String
+podEscape2     xxx links to Number
+podBoldItalic  xxx cleared
+podBoldOpen    xxx cleared
+podBoldAlternativeDelimOpen xxx cleared
+podItalicBold  xxx cleared
+podItalicOpen  xxx cleared
+podItalicAlternativeDelimOpen xxx cleared
+podNoSpaceOpen xxx cleared
+podNoSpaceAlternativeDelimOpen xxx cleared
+podIndexOpen   xxx cleared
+podIndexAlternativeDelimOpen xxx cleared
+podBold        xxx cleared
+podBoldAlternativeDelim xxx cleared
+podItalic      xxx cleared
+podItalicAlternativeDelim xxx cleared
+perlTodo       xxx links to Todo
+perlPOD        xxx links to perlComment
+perlBraces     xxx cleared
+perlConditional xxx links to Conditional
+perlElseIfError xxx links to Error
+perlRepeat     xxx links to Repeat
+perlOperator   xxx links to Operator
+perlFakeGroup  xxx cleared
+perlControl    xxx links to PreProc
+perlStatementStorage xxx links to perlStatement
+perlStatementControl xxx links to perlStatement
+perlStatementScalar xxx links to perlStatement
+perlStatementRegexp xxx links to perlStatement
+perlStatementNumeric xxx links to perlStatement
+perlStatementList xxx links to perlStatement
+perlStatementHash xxx links to perlStatement
+perlStatementIOfunc xxx links to perlStatement
+perlFiledescStatementNocomma xxx cleared
+perlStatementFiledesc xxx links to perlStatement
+perlFiledescStatementComma xxx cleared
+perlStatementVector xxx links to perlStatement
+perlStatementFiles xxx links to perlStatement
+perlStatementFlow xxx links to perlStatement
+perlStatementInclude xxx links to perlStatement
+perlStatementProc xxx links to perlStatement
+perlStatementSocket xxx links to perlStatement
+perlStatementIPC xxx links to perlStatement
+perlStatementNetwork xxx links to perlStatement
+perlStatementPword xxx links to perlStatement
+perlStatementTime xxx links to perlStatement
+perlStatementMisc xxx links to perlStatement
+perlStatementIndirObj xxx links to perlStatement
+perlStatementIndirObjWrap xxx cleared
+perlLabel      xxx links to Label
+perlVarPlain   xxx links to perlIdentifier
+perlVarNotInMatches xxx links to perlIdentifier
+perlVarSlash   xxx links to perlIdentifier
+perlPackageRef xxx links to perlType
+perlVarMember  xxx cleared
+perlVarSimpleMember xxx links to perlIdentifier
+perlMethod     xxx links to perlIdentifier
+perlVarPlain2  xxx links to perlIdentifier
+perlFunctionName xxx links to perlIdentifier
+perlVarBlock   xxx cleared
+perlVarBlock2  xxx cleared
+perlShellCommand xxx links to perlString
+perlFloat      xxx links to Float
+perlNumber     xxx links to Number
+perlStringUnexpanded xxx links to perlString
+perlString     xxx links to String
+perlQQ         xxx links to perlString
+perlArrow      xxx links to perlIdentifier
+perlVarSimpleMemberName xxx links to perlString
+perlPackageConst xxx cleared
+perlFiledescRead xxx links to perlIdentifier
+perlFiledescStatement xxx links to perlIdentifier
+perlSpecialString xxx links to perlSpecial
+NONE           xxx cleared
+perlSpecialStringU2 xxx links to perlString
+perlSpecialStringU xxx links to perlSpecial
+perlSpecialMatch xxx links to perlSpecial
+perlNotEmptyLine xxx links to Error
+perlMatchStartEnd xxx links to perlStatement
+perlVStringV   xxx links to perlStringStartEnd
+perlParensSQ   xxx links to perlString
+perlBracketsSQ xxx links to perlString
+perlBracesSQ   xxx links to perlString
+perlAnglesSQ   xxx links to perlString
+perlParensDQ   xxx links to perlString
+perlBracketsDQ xxx links to perlString
+perlBracesDQ   xxx links to perlString
+perlAnglesDQ   xxx links to perlString
+perlMatch      xxx links to perlString
+perlComment    xxx links to Comment
+perlSubstitutionGQQ xxx links to perlString
+perlSubstitutionSQ xxx links to perlString
+perlTranslationGQ xxx links to perlString
+perlStringStartEnd xxx links to perlString
+perlHereDoc    xxx links to perlString
+perlAutoload   xxx cleared
+perlStatementPackage xxx links to perlStatement
+perlPackageDecl xxx links to perlType
+perlSubError   xxx links to Error
+perlSubAttributesCont xxx links to perlSubAttributes
+perlSubAttributes xxx links to PreProc
+perlSubPrototypeError xxx links to Error
+perlSubPrototype xxx links to Type
+perlSubName    xxx links to Function
+perlFunction   xxx links to Keyword
+perlFunctionPRef xxx links to perlType
+perlSharpBang  xxx links to PreProc
+perlFormatName xxx links to perlIdentifier
+perlFormatField xxx links to perlString
+perlFormat     xxx cleared
+perlDATA       xxx links to perlComment
+perlInclude    xxx links to Include
+perlSpecial    xxx links to Special
+perlCharacter  xxx links to Character
+perlType       xxx links to Type
+perlIdentifier xxx links to Identifier
+perlStatement  xxx links to Statement
+perlList       xxx links to perlStatement
+perlMisc       xxx links to perlStatement
+perlStorageClass xxx links to perlType
+perlSpecialAscii xxx links to perlSpecial
+perlSpecialDollar xxx links to perlSpecial
+perlSync       xxx cleared
+perlSyncPOD    xxx cleared
+vimPerlRegion  xxx cleared
+rubyConditional xxx links to Conditional
+rubyExceptional xxx links to rubyConditional
+rubyMethodExceptional xxx links to rubyDefine
+rubyTodo       xxx links to Todo
+rubyStringEscape xxx links to Special
+rubyQuoteEscape xxx links to rubyStringEscape
+rubyInterpolationDelimiter xxx links to Delimiter
+rubyInterpolation xxx cleared
+rubyInstanceVariable xxx links to rubyIdentifier
+rubyClassVariable xxx links to rubyIdentifier
+rubyGlobalVariable xxx links to rubyIdentifier
+rubyPredefinedVariable xxx links to rubyPredefinedIdentifier
+rubyInvalidVariable xxx links to Error
+rubyNoInterpolation xxx links to rubyString
+rubyDelimEscape xxx cleared
+rubyString     xxx links to String
+rubyNestedParentheses xxx cleared
+rubyNestedCurlyBraces xxx cleared
+rubyNestedAngleBrackets xxx cleared
+rubyNestedSquareBrackets xxx cleared
+rubyRegexpSpecial xxx links to Special
+rubyRegexpComment xxx links to Comment
+rubyRegexpParens xxx cleared
+rubyRegexpCharClass xxx links to rubyRegexpSpecial
+rubyRegexpEscape xxx links to rubyRegexpSpecial
+rubyRegexpBrackets xxx cleared
+rubyRegexpQuantifier xxx links to rubyRegexpSpecial
+rubyRegexpAnchor xxx links to rubyRegexpSpecial
+rubyRegexpDot  xxx links to rubyRegexpCharClass
+rubyASCIICode  xxx links to Character
+rubyInteger    xxx links to Number
+rubyFloat      xxx links to Float
+rubyLocalVariableOrMethod xxx cleared
+rubyBlockArgument xxx cleared
+rubyConstant   xxx links to Type
+rubySymbol     xxx links to Constant
+rubyBlockParameter xxx links to rubyIdentifier
+rubyBlockParameterList xxx cleared
+rubyPredefinedConstant xxx links to rubyPredefinedIdentifier
+rubyRegexpDelimiter xxx links to rubyStringDelimiter
+rubyRegexp     xxx links to rubyString
+rubyStringDelimiter xxx links to Delimiter
+rubySymbolDelimiter xxx links to rubyStringDelimiter
+rubyHeredocStart xxx cleared
+rubyHeredoc    xxx links to rubyString
+rubyAliasDeclaration2 xxx cleared
+rubyAliasDeclaration xxx cleared
+rubyBoolean    xxx links to Boolean
+rubyPseudoVariable xxx links to Constant
+rubyMethodDeclaration xxx cleared
+rubyOperator   xxx links to Operator
+rubyClassDeclaration xxx cleared
+rubyModuleDeclaration xxx cleared
+rubyFunction   xxx links to Function
+rubyControl    xxx links to Statement
+rubyKeyword    xxx links to Keyword
+rubyBeginEnd   xxx links to Statement
+rubyDefine     xxx links to Define
+rubyClass      xxx links to rubyDefine
+rubyModule     xxx links to rubyDefine
+rubyMethodBlock xxx cleared
+rubyBlock      xxx cleared
+rubyConditionalModifier xxx links to rubyConditional
+rubyRepeatModifier xxx links to rubyRepeat
+rubyDoBlock    xxx cleared
+rubyCurlyBlockDelimiter xxx cleared
+rubyCurlyBlock xxx cleared
+rubyArrayDelimiter xxx cleared
+rubyArrayLiteral xxx cleared
+rubyBlockExpression xxx cleared
+rubyCaseExpression xxx cleared
+rubyConditionalExpression xxx cleared
+rubyRepeat     xxx links to Repeat
+rubyOptionalDo xxx links to rubyRepeat
+rubyOptionalDoLine xxx cleared
+rubyRepeatExpression xxx cleared
+rubyAccess     xxx links to Statement
+rubyAttribute  xxx links to Statement
+rubyEval       xxx links to Statement
+rubyException  xxx links to Exception
+rubyInclude    xxx links to Include
+rubySharpBang  xxx links to PreProc
+rubySpaceError xxx links to rubyError
+rubyComment    xxx links to Comment
+rubyMultilineComment xxx cleared
+rubyDocumentation xxx links to Comment
+rubyKeywordAsMethod xxx cleared
+rubyDataDirective xxx links to Delimiter
+rubyData       xxx links to Comment
+rubyIdentifier xxx links to Identifier
+rubyPredefinedIdentifier xxx links to rubyIdentifier
+rubyError      xxx links to Error
+vimRubyRegion  xxx cleared
+pythonStatement xxx links to Statement
+pythonFunction xxx links to Function
+pythonConditional xxx links to Conditional
+pythonRepeat   xxx links to Repeat
+pythonOperator xxx links to Operator
+pythonException xxx links to Exception
+pythonInclude  xxx links to Include
+pythonAsync    xxx links to Statement
+pythonDecorator xxx links to Define
+pythonTodo     xxx links to Todo
+pythonComment  xxx links to Comment
+pythonQuotes   xxx links to String
+pythonEscape   xxx links to Special
+pythonString   xxx links to String
+pythonTripleQuotes xxx links to pythonQuotes
+pythonSpaceError xxx cleared
+pythonDoctest  xxx links to Special
+pythonRawString xxx links to String
+pythonNumber   xxx links to Number
+pythonBuiltin  xxx links to Function
+pythonAttribute xxx cleared
+pythonExceptions xxx links to Structure
+pythonDoctestValue xxx links to Define
+pythonSync     xxx cleared
+vimPythonRegion xxx cleared
+vimEmbedError  xxx links to vimError
+vimAugroupSyncA xxx cleared
+vimError       xxx links to Error
+vimKeyCodeError xxx links to vimError
+vimWarn        xxx links to WarningMsg
+vimAuHighlight xxx links to vimHighlight
+vimAutoCmdOpt  xxx links to vimOption
+vimAutoSet     xxx links to vimCommand
+vimCondHL      xxx links to vimCommand
+vimElseif      xxx links to vimCondHL
+vimFold        xxx links to Folded
+vimSynOption   xxx links to Special
+vimHLMod       xxx links to PreProc
+vimKeyCode     xxx links to vimSpecFile
+vimKeyword     xxx links to Statement
+vimSpecial     xxx links to Type
+vimStatement   xxx links to Statement
+airline_z_to_airline_warning xxx ctermfg=166 ctermbg=190
+airline_warning_to_airline_error xxx ctermfg=160 ctermbg=166
+airline_tab_to_airline_tabhid_inactive_inactive_bold xxx term=bold cterm=bold gui=bold
+airline_tab_to_airline_tabhid_inactive_inactive_red xxx ctermfg=160 guifg=#ff0000
+airline_tabhid_to_airline_tabsel_inactive_inactive_bold xxx term=bold cterm=bold
+                   gui=bold
+airline_tabhid_to_airline_tabsel_inactive_inactive_red xxx ctermfg=160 guifg=#ff0000
+airline_tab_to_airline_tabmod_inactive_inactive_bold xxx term=bold cterm=bold gui=bold
+airline_tab_to_airline_tabmod_inactive_inactive_red xxx ctermfg=160 guifg=#ff0000
+CtrlPdark_to_CtrlPdark_inactive_inactive_bold xxx term=bold cterm=bold gui=bold
+CtrlPdark_to_CtrlPdark_inactive_inactive_red xxx ctermfg=160 guifg=#ff0000
+airline_tabmod_unsel_to_airline_tabsel_inactive_inactive_bold xxx term=bold cterm=bold
+                   gui=bold
+airline_tabmod_unsel_to_airline_tabsel_inactive_inactive_red xxx ctermfg=160
+                   guifg=#ff0000
+airline_tabmod_to_airline_tabfill_inactive_inactive_bold xxx term=bold cterm=bold
+                   gui=bold
+airline_tabmod_to_airline_tabfill_inactive_inactive_red xxx ctermfg=160 guifg=#ff0000
+CtrlPlight_to_CtrlPwhite_inactive_inactive_bold xxx term=bold cterm=bold gui=bold
+CtrlPlight_to_CtrlPwhite_inactive_inactive_red xxx ctermfg=160 guifg=#ff0000
+CtrlPwhite_to_CtrlPlight_inactive_inactive_bold xxx term=bold cterm=bold gui=bold
+CtrlPwhite_to_CtrlPlight_inactive_inactive_red xxx ctermfg=160 guifg=#ff0000
+airline_tabmod_unsel_to_airline_tab_inactive_inactive_bold xxx term=bold cterm=bold
+                   gui=bold
+airline_tabmod_unsel_to_airline_tab_inactive_inactive_red xxx ctermfg=160
+                   guifg=#ff0000
+CtrlPdark_to_CtrlPlight_inactive_inactive_bold xxx term=bold cterm=bold gui=bold
+CtrlPdark_to_CtrlPlight_inactive_inactive_red xxx ctermfg=160 guifg=#ff0000
+airline_tabsel_to_airline_tabhid_inactive_inactive_bold xxx term=bold cterm=bold
+                   gui=bold
+airline_tabsel_to_airline_tabhid_inactive_inactive_red xxx ctermfg=160 guifg=#ff0000
+airline_tabmod_to_airline_tab_inactive_inactive_bold xxx term=bold cterm=bold gui=bold
+airline_tabmod_to_airline_tab_inactive_inactive_red xxx ctermfg=160 guifg=#ff0000
+airline_c6_to_airline_x_inactive_inactive xxx ctermfg=236 ctermbg=236
+airline_c6_to_airline_x_inactive_inactive_bold xxx term=bold cterm=bold ctermfg=236
+                   ctermbg=236 gui=bold
+airline_c6_to_airline_x_inactive_inactive_red xxx ctermfg=160 ctermbg=236
+                   guifg=#ff0000
+airline_tabhid_to_airline_tab_inactive_inactive_bold xxx term=bold cterm=bold gui=bold
+airline_tabhid_to_airline_tab_inactive_inactive_red xxx ctermfg=160 guifg=#ff0000
+CtrlPlight_to_CtrlPdark_inactive_inactive_bold xxx term=bold cterm=bold gui=bold
+CtrlPlight_to_CtrlPdark_inactive_inactive_red xxx ctermfg=160 guifg=#ff0000
+airline_warning_to_airline_error_inactive xxx ctermfg=160 ctermbg=166
+airline_z_to_airline_warning_inactive xxx ctermfg=166 ctermbg=234
+airline_c8_inactive xxx ctermfg=239 ctermbg=236 guifg=#4e4e4e guibg=#303030
+CtrlPdark_to_CtrlPlight_bold xxx term=bold cterm=bold ctermfg=98 ctermbg=55 gui=bold
+CtrlPdark_to_CtrlPlight_red xxx ctermfg=160 ctermbg=55 guifg=#ff0000
+airline_tabhid_to_airline_tabsel_bold xxx term=bold cterm=bold ctermfg=234 ctermbg=190
+                   gui=bold
+airline_tabhid_to_airline_tabsel_red xxx ctermfg=160 ctermbg=190 guifg=#ff0000
+CtrlPlight_to_CtrlPdark_bold xxx term=bold cterm=bold ctermfg=98 ctermbg=55 gui=bold
+CtrlPlight_to_CtrlPdark_red xxx ctermfg=160 ctermbg=55 guifg=#ff0000
+airline_tabhid_to_airline_tab_bold xxx term=bold cterm=bold ctermfg=234 ctermbg=238
+                   gui=bold
+airline_tabhid_to_airline_tab_red xxx ctermfg=160 ctermbg=238 guifg=#ff0000
+CtrlPwhite_to_CtrlPlight_bold xxx term=bold cterm=bold ctermfg=231 ctermbg=98 gui=bold
+CtrlPwhite_to_CtrlPlight_red xxx ctermfg=160 ctermbg=98 guifg=#ff0000
+CtrlPlight_to_CtrlPwhite_bold xxx term=bold cterm=bold ctermfg=98 ctermbg=231 gui=bold
+CtrlPlight_to_CtrlPwhite_red xxx ctermfg=160 ctermbg=231 guifg=#ff0000
+airline_c6_to_airline_x_bold xxx term=bold cterm=bold ctermfg=234 gui=bold
+airline_c6_to_airline_x_red xxx ctermfg=160 guifg=#ff0000
+CtrlPdark_to_CtrlPdark_bold xxx term=bold cterm=bold ctermfg=55 ctermbg=55 gui=bold
+CtrlPdark_to_CtrlPdark_red xxx ctermfg=160 ctermbg=55 guifg=#ff0000
+airline_warning_to_airline_error_bold xxx term=bold cterm=bold ctermfg=160 ctermbg=166
+                   gui=bold
+airline_warning_to_airline_error_red xxx ctermfg=160 ctermbg=166 guifg=#ff0000
+airline_z_to_airline_warning_bold xxx term=bold cterm=bold ctermfg=166 ctermbg=190
+                   gui=bold
+airline_z_to_airline_warning_red xxx ctermfg=160 ctermbg=190 guifg=#ff0000
