@@ -1,74 +1,44 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-vector<int> graph[20001];
+#define LIMIT(X, cmd) {static int __ = 0; if(__++ >= (X)) cmd;}
 
 
-bool bfs(int v){
-  queue<int> que;
-  int coloring[20001];
-  fill_n(coloring, 20001, -1);
-  que.push(v);
-  coloring[v] = 1;
+int n, m, c[101][101];
+int main() {
+  scanf("%d %d", &n, &m);
+  for (int i = 1; i <= n; i++) 
+    for (int j = 1; j <= n; j++) 
+      c[i][j] = 1e9;
+  for (int i = 1; i <= n; i++) 
+    c[i][i] = 0;
 
-
-  while(!que.empty()){
-    int q = que.front();
-    int startColor = coloring[q];
-    que.pop();
-
-    for(auto i : graph[q]){
-      if(coloring[i] == -1){
-        // 다른색 칠함 
-        que.push(i);
-        coloring[i] = !startColor;
-      }
-      else{
-        if(startColor == coloring[i]){
-          return false;
-          // nokay
-        }
-        else{
-          // ok, pass
-        }
+  for (int i = 0;  i < m; i++) {
+    int x, y, z;
+    scanf("%d %d %d", &x, &y, &z);
+    if(c[x][y] > z){
+      c[x][y] = z;
+    }
+  }
+  for (int i = 1; i <= n; i++) {
+    for (int j = 1; j <= n; j++) {
+      for (int k = 1; k <= n; k++){
+        if (c[j][i] + c[i][k] < c[j][k]) 
+          c[j][k] = c[j][i] + c[i][k];
       }
     }
   }
-
-  return true; 
-}
-int main(){
-  int tc;
-
-  cin >> tc;
-
-  while(tc--){
-    int v, e;
-    cin >> v >> e;
-
-    for(int i=1; i<=e; i++){
-      int a, b;
-      cin >> a >> b;
-      graph[a].push_back(b);
-      graph[b].push_back(a); 
-    }
-
-    bool bit = false;
-    for(int i=1; i<=v; i++){
-      if(bfs(i) == false){
-        bit = false;
-        break;
+  for (int i = 1; i <= n; i++) {
+    for (int j = 1; j <= n; j++) {
+      if(c[i][j] == 1e9){
+        printf("0 ");
       }
       else{
-
+        printf("%d ", c[i][j]);
       }
     }
-    if(bit == false){
-      printf("NO");
-    }
-    else{
-      printf("YES");
-    }
+
+    printf("\n");
   }
   return 0;
 }
