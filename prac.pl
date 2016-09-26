@@ -1,4 +1,19 @@
+use Clone 'clone';
+use Storable 'dclone';
 use Data::Dumper;
+print @INC;
+
+my $data = {
+  set => [ 1 .. 50 ],
+  foo => {
+    answer => 42,
+    object => 50
+  },
+};
+
+my $cloned_data = clone($data);
+
+exit;
 my@inp;
 push@inp,split while<>;
 
@@ -37,10 +52,10 @@ for$i(@odds){
 }
 
 # s 가 다른것을 선택할 수 있는지여부
-sub dfs {
-  (my $s) = @_;
+#sub dfs {
+  #(my $s) = @_;
 
-  if(
+  #if(
 
-}
+#}
 print Dumper(\$graph);
